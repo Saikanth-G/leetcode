@@ -1,6 +1,6 @@
-SELECT e2.name
-FROM Employee e1
-JOIN Employee e2
-ON e1.managerId = e2.id
-GROUP BY e1.managerId
-HAVING COUNT(e1.id) >= 5;
+select e2.name
+from Employee e1
+join Employee e2
+on e1.managerId = e2.id
+group by e1.managerId
+having count(*) >=5;
